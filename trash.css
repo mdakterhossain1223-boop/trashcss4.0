@@ -1,0 +1,158 @@
+/* ================= TrashCSS 4.0 ================= */
+/* Single file Tailwind-like CSS framework */
+
+/* ================== Variables ================== */
+:root{
+  /* Colors */
+  --ts-black:#000000;
+  --ts-white:#ffffff;
+  --ts-gray-50:#f9fafb; --ts-gray-100:#f3f4f6; --ts-gray-200:#e5e7eb; --ts-gray-300:#d1d5db;
+  --ts-gray-400:#9ca3af; --ts-gray-500:#6b7280; --ts-gray-600:#4b5563; --ts-gray-700:#374151;
+  --ts-gray-800:#1f2937; --ts-gray-900:#111827;
+
+  --ts-red-50:#fef2f2; --ts-red-100:#fee2e2; --ts-red-200:#fecaca; --ts-red-300:#fca5a5;
+  --ts-red-400:#f87171; --ts-red-500:#ef4444; --ts-red-600:#dc2626; --ts-red-700:#b91c1c;
+  --ts-red-800:#991b1b; --ts-red-900:#7f1d1d;
+
+  --ts-blue-50:#eff6ff; --ts-blue-100:#dbeafe; --ts-blue-200:#bfdbfe; --ts-blue-300:#93c5fd;
+  --ts-blue-400:#60a5fa; --ts-blue-500:#3b82f6; --ts-blue-600:#2563eb; --ts-blue-700:#1d4ed8;
+  --ts-blue-800:#1e40af; --ts-blue-900:#1e3a8a;
+
+  --ts-green-50:#f0fdf4; --ts-green-100:#dcfce7; --ts-green-200:#bbf7d0; --ts-green-300:#86efac;
+  --ts-green-400:#4ade80; --ts-green-500:#22c55e; --ts-green-600:#16a34a; --ts-green-700:#15803d;
+  --ts-green-800:#166534; --ts-green-900:#14532d;
+
+  --ts-yellow-50:#fefce8; --ts-yellow-100:#fef9c3; --ts-yellow-200:#fef08a; --ts-yellow-300:#fde047;
+  --ts-yellow-400:#facc15; --ts-yellow-500:#eab308; --ts-yellow-600:#ca8a04; --ts-yellow-700:#a16207;
+  --ts-yellow-800:#854d0e; --ts-yellow-900:#713f12;
+
+  --ts-orange-50:#fff7ed; --ts-orange-100:#ffedd5; --ts-orange-200:#fed7aa; --ts-orange-300:#fdba74;
+  --ts-orange-400:#fb923c; --ts-orange-500:#f97316; --ts-orange-600:#ea580c; --ts-orange-700:#c2410c;
+  --ts-orange-800:#9a3412; --ts-orange-900:#7c2d12;
+
+  --ts-purple-50:#faf5ff; --ts-purple-100:#f3e8ff; --ts-purple-200:#e9d5ff; --ts-purple-300:#d8b4fe;
+  --ts-purple-400:#c084fc; --ts-purple-500:#a855f7; --ts-purple-600:#9333ea; --ts-purple-700:#7e22ce;
+  --ts-purple-800:#6b21a8; --ts-purple-900:#581c87;
+
+  --ts-pink-50:#fdf2f8; --ts-pink-100:#fce7f3; --ts-pink-200:#fbcfe8; --ts-pink-300:#f9a8d4;
+  --ts-pink-400:#f472b6; --ts-pink-500:#ec4899; --ts-pink-600:#db2777; --ts-pink-700:#be185d;
+  --ts-pink-800:#9d174d; --ts-pink-900:#831843;
+
+  /* Font sizes */
+  --ts-text-xs:0.75rem; --ts-text-sm:0.875rem; --ts-text-base:1rem; --ts-text-lg:1.125rem; --ts-text-xl:1.25rem;
+  --ts-text-2xl:1.5rem; --ts-text-3xl:1.875rem; --ts-text-4xl:2.25rem; --ts-text-5xl:3rem;
+}
+
+/* ================== Global ================== */
+*{margin:0;padding:0;box-sizing:border-box;}
+body{font-family:Arial,sans-serif;}
+
+/* ================== Colors ================== */
+.ts-text-red-500{color:var(--ts-red-500);}
+.ts-text-blue-500{color:var(--ts-blue-500);}
+.ts-text-green-500{color:var(--ts-green-500);}
+.ts-text-yellow-500{color:var(--ts-yellow-500);}
+.ts-text-gray-500{color:var(--ts-gray-500);}
+.ts-text-white{color:var(--ts-white);}
+.ts-bg-red-500{background-color:var(--ts-red-500);}
+.ts-bg-blue-500{background-color:var(--ts-blue-500);}
+.ts-bg-green-500{background-color:var(--ts-green-500);}
+.ts-bg-yellow-500{background-color:var(--ts-yellow-500);}
+.ts-bg-gray-500{background-color:var(--ts-gray-500);}
+.ts-bg-white{background-color:var(--ts-white);}
+
+/* ================== Spacing ================== */
+.ts-m-0{margin:0;} .ts-m-1{margin:0.25rem;} .ts-m-2{margin:0.5rem;} .ts-m-3{margin:0.75rem;} .ts-m-4{margin:1rem;} .ts-m-5{margin:1.25rem;} .ts-m-6{margin:1.5rem;} .ts-m-8{margin:2rem;}
+.ts-p-0{padding:0;} .ts-p-1{padding:0.25rem;} .ts-p-2{padding:0.5rem;} .ts-p-3{padding:0.75rem;} .ts-p-4{padding:1rem;} .ts-p-5{padding:1.25rem;} .ts-p-6{padding:1.5rem;} .ts-p-8{padding:2rem;}
+
+/* ================== Width & Height ================== */
+.ts-w-1{width:0.25rem;} .ts-w-2{width:0.5rem;} .ts-w-3{width:0.75rem;} .ts-w-4{width:1rem;} .ts-w-5{width:1.25rem;}
+.ts-h-1{height:0.25rem;} .ts-h-2{height:0.5rem;} .ts-h-3{height:0.75rem;} .ts-h-4{height:1rem;} .ts-h-5{height:1.25rem;}
+
+/* ================== Typography ================== */
+.ts-text-xs{font-size:var(--ts-text-xs);}
+.ts-text-sm{font-size:var(--ts-text-sm);}
+.ts-text-base{font-size:var(--ts-text-base);}
+.ts-text-lg{font-size:var(--ts-text-lg);}
+.ts-text-xl{font-size:var(--ts-text-xl);}
+.ts-text-2xl{font-size:var(--ts-text-2xl);}
+.ts-text-3xl{font-size:var(--ts-text-3xl);}
+.ts-text-4xl{font-size:var(--ts-text-4xl);}
+.ts-text-5xl{font-size:var(--ts-text-5xl);}
+.ts-font-bold{font-weight:bold;}
+.ts-font-medium{font-weight:500;}
+.ts-font-light{font-weight:300;}
+.ts-text-center{text-align:center;}
+.ts-text-left{text-align:left;}
+.ts-text-right{text-align:right;}
+.ts-uppercase{text-transform:uppercase;}
+.ts-lowercase{text-transform:lowercase;}
+
+/* ================== Flex & Grid ================== */
+.ts-flex{display:flex;}
+.ts-inline-flex{display:inline-flex;}
+.ts-flex-row{flex-direction:row;}
+.ts-flex-col{flex-direction:column;}
+.ts-justify-start{justify-content:flex-start;}
+.ts-justify-center{justify-content:center;}
+.ts-justify-end{justify-content:flex-end;}
+.ts-justify-between{justify-content:space-between;}
+.ts-justify-around{justify-content:space-around;}
+.ts-items-start{align-items:flex-start;}
+.ts-items-center{align-items:center;}
+.ts-items-end{align-items:flex-end;}
+.ts-items-stretch{align-items:stretch;}
+.ts-gap-1{gap:0.25rem;} .ts-gap-2{gap:0.5rem;} .ts-gap-3{gap:0.75rem;} .ts-gap-4{gap:1rem;}
+
+/* Grid */
+.ts-grid{display:grid;}
+.ts-grid-cols-1{grid-template-columns:repeat(1,1fr);}
+.ts-grid-cols-2{grid-template-columns:repeat(2,1fr);}
+.ts-grid-cols-3{grid-template-columns:repeat(3,1fr);}
+.ts-grid-cols-4{grid-template-columns:repeat(4,1fr);}
+.ts-grid-cols-5{grid-template-columns:repeat(5,1fr);}
+.ts-grid-gap-1{gap:0.25rem;} .ts-grid-gap-2{gap:0.5rem;} .ts-grid-gap-3{gap:0.75rem;} .ts-grid-gap-4{gap:1rem;}
+
+/* ================== Borders ================== */
+.ts-border{border:1px solid #000;}
+.ts-border-0{border:0;}
+.ts-border-t{border-top:1px solid #000;}
+.ts-border-b{border-bottom:1px solid #000;}
+.ts-border-l{border-left:1px solid #000;}
+.ts-border-r{border-right:1px solid #000;}
+.ts-rounded{border-radius:0.25rem;}
+.ts-rounded-lg{border-radius:0.5rem;}
+.ts-rounded-full{border-radius:9999px;}
+
+/* ================== Shadows & Opacity ================== */
+.ts-shadow-sm{box-shadow:0 1px 2px rgba(0,0,0,0.05);}
+.ts-shadow-md{box-shadow:0 4px 6px rgba(0,0,0,0.1);}
+.ts-shadow-lg{box-shadow:0 10px 15px rgba(0,0,0,0.2);}
+.ts-opacity-0{opacity:0;}
+.ts-opacity-25{opacity:0.25;}
+.ts-opacity-50{opacity:0.5;}
+.ts-opacity-75{opacity:0.75;}
+.ts-opacity-100{opacity:1;}
+
+/* ================== Positioning ================== */
+.ts-relative{position:relative;}
+.ts-absolute{position:absolute;}
+.ts-fixed{position:fixed;}
+.ts-top-0{top:0;}
+.ts-left-0{left:0;}
+.ts-right-0{right:0;}
+.ts-bottom-0{bottom:0;}
+.ts-z-10{z-index:10;}
+.ts-z-50{z-index:50;}
+
+/* ================== Hover, Focus, Active ================== */
+.ts-hover-bg-red-500:hover{background-color:var(--ts-red-500);}
+.ts-hover-bg-blue-500:hover{background-color:var(--ts-blue-500);}
+.ts-focus-bg-green-500:focus{background-color:var(--ts-green-500);}
+.ts-active-bg-yellow-500:active{background-color:var(--ts-yellow-500);}
+
+/* ================== Animations ================== */
+.ts-animate-bounce{animation:ts-bounce 1s infinite;}
+@keyframes ts-bounce{0%,100%{transform:translateY(0);}50%{transform:translateY(-10px);}}
+
+/
